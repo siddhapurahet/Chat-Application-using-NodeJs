@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App-with SocketIO</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script> <!--this file is included to connect the clietn wit the server so that the communication is established--> 
+    <script defer src="js/client.js"></script> <!--The defer is added so that all the changes are seen after the DOM is loaded otherwise the messages will not be reflected-->
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="" alt="">
+    </nav>
+    <div class="container">
+        <div class="message-right">hi</div>
+        <div class="message-left">hi</div>
+    </div>
+
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
